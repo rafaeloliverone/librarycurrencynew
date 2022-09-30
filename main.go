@@ -21,7 +21,7 @@ func main() {
 			time.Sleep(5 * time.Second)
 			value := getLibraCurrency()
 			print(value)
-			if value < 6.00 {
+			if value < 6.80 {
 				fmt.Println("awaiting the time")
 				sendtext("valor diario libra", fmt.Sprintf("%.2f", value))
 				fmt.Println("valor enviado")
