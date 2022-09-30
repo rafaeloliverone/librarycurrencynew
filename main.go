@@ -18,10 +18,10 @@ func main() {
 	go func() {
 		for {
 			fmt.Println("Entrou dentro do for ")
-			time.Sleep(5 * time.Second)
+			time.Sleep(60 * time.Minute)
 			value := getLibraCurrency()
 			print(value)
-			if value < 6.80 {
+			if value < 7.00 {
 				fmt.Println("awaiting the time")
 				sendtext("valor diario libra", fmt.Sprintf("%.2f", value))
 				fmt.Println("valor enviado")
